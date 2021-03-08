@@ -148,7 +148,7 @@ RUN set -xe; \
 
 RUN set -xe; \
     make install \
- && curl -k -o ${CA_BUNDLE} ${CA_BUNDLE_SOURCE}
+ && curl -Lk -o ${CA_BUNDLE} ${CA_BUNDLE_SOURCE}
 
 ###############################################################################
 # LIBSSH2 Build
